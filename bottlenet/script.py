@@ -9,12 +9,12 @@ if os.geteuid() != 0:
     sys.exit(1)
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-ip_script = os.path.join(script_dir, "ip.py")
-dns_script = os.path.join(script_dir, "dns.py")
-dns_server_script = os.path.join(script_dir, "dns_server.py")
+ip_script = os.path.join(script_dir, "source/ip.py")
+dns_script = os.path.join(script_dir, "source/dns.py")
+dns_server_script = os.path.join(script_dir, "source/dns_server.py")
 web_server_script = os.path.join(script_dir, "source/web_server.py")
 server_smb = os.path.join(script_dir, "source/server_smb.py")
-server_nfs = os.path.join(script_dir, "server_nfs.py")
+server_nfs = os.path.join(script_dir, "source/server_nfs.py")
 def flujo():
     if subprocess.call(["which", "iftop"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL) != 0:
         print("\033[33miftop no está instalado. Instalando...\033[0m")
