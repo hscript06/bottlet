@@ -30,11 +30,8 @@ def flujo():
     except KeyboardInterrupt:
         print("\n\033[33mVolviendo al menú Bottlenet...\033[0m")
 def opciones():
-    print("⬇️ eleccione el numero de la opcion ⬇️")
     print("-help- mostrar opciones")
     print("-exit- salir")
-    print("help- mostrar opciones")
-    print("exit- salir")
     print("[if]- informacion")
     print("|--ip- ver las ips de los adaptadores de red")
     print("|--dns- ver las dns configuradas")
